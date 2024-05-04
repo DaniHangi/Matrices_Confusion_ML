@@ -1,0 +1,60 @@
+Bien sûr, interprétons les métriques de précision, d'exactitude et de rappel pour les modèles KNN et Decision Tree formés sur l'ensemble de données Iris à l'aide du code Python fourni.
+
+1. Précision :
+
+En examinant les matrices de confusion des deux modèles, nous pouvons calculer leurs scores de précision :
+
+KNN :
+
+TP + TN = 143
+Prédictions totales = 150
+Précision = 143 / 150 = 0,9533
+Arbre de décision:
+
+TP + TN = 147
+Prédictions totales = 150
+Précision = 147/150 = 0,9800
+Interprétation:
+
+KNN : Le modèle KNN a une précision de 95,33 %, ce qui signifie qu'il a correctement classé 95,33 % des espèces de fleurs d'iris.
+Arbre de décision : le modèle d'arbre de décision a une précision de 98,00 %, ce qui indique une performance légèrement meilleure dans la classification correcte des espèces d'iris.
+2. Précision :
+
+KNN :
+
+Précision pour Setosa : 14 / 14 = 1,00 (Précision parfaite)
+Précision pour Virginica : 13 / 14 = 0,929 (Haute précision)
+Précision pour Versicolor : 6 / 7 = 0,857 (Bonne précision)
+Arbre de décision:
+
+Précision pour Setosa : 14 / 14 = 1,00 (Précision parfaite)
+Précision pour Virginica : 14 / 14 = 1,00 (Précision parfaite)
+Précision pour Versicolor : 7 / 7 = 1,00 (Précision parfaite)
+Interprétation:
+
+KNN : Le modèle KNN atteint une précision parfaite (1,00) pour Setosa et une haute précision (0,929) pour Virginica. Cela suggère que lorsque le modèle prédit ces espèces, il est très sûr et précis. Cependant, sa précision pour le Versicolor est plus faible (0,857), ce qui indique une classification erronée entre le Versicolor et d'autres espèces.
+Arbre de décision : le modèle d'arbre de décision atteint une précision parfaite (1,00) pour les trois espèces d'iris. Cela signifie que chaque fois qu’il prédit une espèce, il est absolument correct.
+3. Rappel :
+
+KNN :
+
+Rappel pour Setosa : 14/15 = 0,933 (Rappel élevé)
+Rappel pour Virginica : 13/14 = 0,929 (Rappel élevé)
+Rappel pour Versicolor : 6 / 7 = 0,857 (Bon rappel)
+Arbre de décision:
+
+Rappel pour Setosa : 14/15 = 0,933 (Rappel élevé)
+Rappel pour Virginica : 14 / 14 = 1,00 (Rappel parfait)
+Rappel pour Versicolor : 7 / 7 = 1,00 (Rappel parfait)
+
+Interprétation:
+
+KNN : Le modèle KNN atteint un rappel élevé (0,933) pour Setosa et Virginiaca, indiquant qu'il identifie correctement la plupart des instances appartenant à ces espèces. Cependant, son rappel pour Versicolor est légèrement inférieur (0,857), ce qui signifie qu'il manque certaines instances de Versicolor.
+Arbre de décision : le modèle d'arbre de décision atteint un rappel parfait (1,00) pour les trois espèces d'iris. Cela implique qu'il identifie correctement toutes les instances appartenant à chaque espèce, sans en manquer aucune.
+Comparaison globale :
+
+KNN : Le modèle KNN a une précision légèrement inférieure (95,33 %) à celle de l'arbre de décision (98,00 %). Cependant, il fonctionne toujours bien pour classer correctement la plupart des instances. Il atteint une précision élevée pour Setosa et Virginica mais une précision inférieure pour Versicolor. De même, son rappel est élevé pour Setosa et Virginica mais légèrement inférieur pour Versicolor.
+Arbre de décision : le modèle d'arbre de décision surpasse le KNN en termes d'exactitude (98,00 %), de précision (parfait pour toutes les espèces) et de rappel (parfait pour toutes les espèces). Cela suggère que le modèle d'arbre de décision permet de mieux distinguer les espèces d'iris et de commettre globalement moins d'erreurs.
+Conclusion:
+
+Les modèles KNN et Decision Tree démontrent de bonnes performances dans la classification des espèces d’iris. Le modèle d'arbre de décision devance légèrement le KNN en termes d'exactitude globale et de mesures de rappel de précision. Toutefois, le choix entre les deux modèles peut dépendre des exigences spécifiques et des priorités de la tâche à accomplir. Par exemple, si une précision parfaite pour toutes les espèces est cruciale, l’arbre de décision serait le choix privilégié.

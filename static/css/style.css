@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+  }
+  
+  header {
+    text-align: center;
+    color: white;
+    background-color: red;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+  }
+  
+  section {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+
+  h1{
+    color: white;
+  }
+
+
+  h2{
+    color: red;
+  }
+
+
+  #prediction-form, #prediction-output{
+    background-color: black;
+    color: white;
+  }
+
+
+  
+  
+
+  
